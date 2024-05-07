@@ -1,4 +1,4 @@
-import React , { useEffect , useRef , useState } from 'react';
+import React , { useRef  } from 'react';
 import st from './Test.module.scss'
 import Slider from "../../Block1/Slider/Slider";
 const Test = ()=>{

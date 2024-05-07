@@ -1,25 +1,11 @@
-import React , { useEffect , useState } from 'react';
+import React  from 'react';
 import st from './Footer.module.scss'
 
 const Footer = ()=>{
-    const [showHide,setShowHide]=useState(false)
-    useEffect ( ()=>{
-        window.addEventListener("resize" , ()=>{
-            if(window.innerWidth<=570 && !showHide){
-                setShowHide(true)
-            }
-            if(window.innerWidth>570 && showHide){
-                setShowHide(false)
-            }
-        })
-        return ()=>{
-            window.removeEventListener("resize",null)
-        }
-    } , [window.innerWidth] );
     return (
         <div className={st.container}>
             <div className={st.map}>
-                {showHide && <img src='/pinMap.png' alt=''></img>}
+                 <img src='/pinMap.png' alt=''></img>
             </div>
             <div className={st.info}>
                 <div className={st.left}>

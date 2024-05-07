@@ -16,6 +16,10 @@
             left: 50%;
             top: 10%;
             transform: translateX(-50%);
+            visibility: visible;
+            @media (width>570px) {
+                visibility: hidden;
+            }
         }
     }
     .info{
