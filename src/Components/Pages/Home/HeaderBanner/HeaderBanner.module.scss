@@ -1,0 +1,253 @@
+.container{
+  max-width: 1919px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .secondLayer{
+    min-height: 522px;
+    height: 100%;
+    position: relative;
+    margin-top: -122px;
+    opacity: 1;
+    background-color: rgba(8, 32, 48, 1);
+    width: 100%;
+    clip-path: polygon(0 122px, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    .dots{
+      flex: 1;
+      box-sizing: border-box;
+      background-image: url("./../../../../images/dots.png");
+      display: flex;
+      justify-content: space-around;
+      place-items: center;
+      flex-wrap: wrap;
+      row-gap: 46px;
+      padding: 0 24px 0 28px;
+      @media (width<= 1000px) {
+        padding-top: 100px;
+      }
+      .about{
+        max-width: 530px;
+        min-width: 265px;
+        width: 100%;
+        min-height: 254px;
+        .aboutMain{
+          font-family: Inter;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 60px;
+          text-align: left;
+          color: rgba(200, 151, 44, 1);
+        }
+        .aboutSecond{
+          font-family: Inter;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 42px;
+          text-align: left;
+          color: rgba(255, 255, 255, 1);
+          padding:0 0 31px 24px;
+        }
+        .aboutThird{
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22.4px;
+          text-align: left;
+          color: rgba(128, 149, 164, 1);
+        }
+      }
+      .jobsOffer{
+        max-width: 419px;
+        width: 100%;
+       place-self: end;
+      }
+    }
+  }
+  .slide{
+    position: absolute;
+    top: 445px;
+    left: 15%;
+    width: 57px;
+    height: 7px;
+    z-index: 1;
+  }
+  .testSlide{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100% 100%;
+    height: 512px;
+    transition: 1s all ease;
+    &.active{
+      transform: translateX(-100%);
+    }
+    .green{
+      width: 100%;
+      background: url("./../../../../images/bg1.png") no-repeat center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 92px;
+      max-width: 100%; 
+      .group1{
+       display: flex;
+       padding-left: 27.8%;
+        place-items: center;
+       img{
+         max-height: 182px;
+         width: 217px;
+       }
+       span{
+         width: 541px;
+         max-height: 152px;
+         font-family: Inter;
+         font-size: 80px;
+         font-weight: 700;
+         line-height: 76.02px;
+         text-align: center;
+         margin-left: -81px;
+       }
+     }
+      .group2{
+        padding-left: 44.3%;
+        .text{
+          font-family: Inter;
+          font-size: 21px;
+          font-weight: 400;
+          line-height: 25.41px;
+          text-align: left;
+          color: rgba(31, 45, 58, 1);
+          height: 50px;
+        }
+        .text:after{
+          content: 'No Day is the Same';
+          font-family: Inter;
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 25.41px;
+          text-align: left;
+
+        }
+        .items{
+          display: flex;
+          justify-content: space-between;
+          place-items: center;
+          width: 224px;
+          height: 24px;
+          color: rgba(131, 131, 131, 1);
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 24.2px;
+          text-align: left;
+
+          div{
+            height: 5px;
+            width: 5px;
+            background: linear-gradient(223.08deg, #FFC953 6.11%, #C8972C 97.63%);
+            border-radius: 50%;
+          }
+        }
+          button{
+            height: 46px;
+            width: 214px;
+            background: none;
+            border: 0.77px solid  rgba(200, 151, 44, 1);
+           /* border: 5px solid;
+            border-image: linear-gradient(223.08deg, #FFC953 6.11%, #C8972C 97.63%) 1;*/
+            border-radius: 35px;
+            color: rgba(200, 151, 44, 1);
+            overflow: hidden;
+            margin-top: 27px;
+          }
+        
+       
+      }
+    }
+    .red{
+      width: 100%;
+      background: url("./../../../../images/bg2.png") no-repeat 25% 50%;
+      position: relative;
+      .mainText{
+        position: absolute;
+        top: 124px;
+        left: 22%;
+        width: 611px;
+        font-family: Inter;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 80px;
+        text-align: left;
+         color: rgba(255, 255, 255, 1);
+      }
+      .socndaryText{
+        position: absolute;
+        top: 305px;
+        left: 23%;
+        width: 511px;
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 26.61px;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+      }
+      button{
+        position: absolute;
+        top: 376px;
+        left: 23%;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 35px;
+        width: 180px;
+        height: 46px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(58, 160, 182, 0.5);
+
+      ;
+      }
+    }
+  }
+}
+.newsLetter{
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 70px;
+  background-color: rgba(200, 151, 44, 1);
+  place-items: center;
+  gap: 13px;
+  padding: 20px 0;
+  div{
+    height: 100%;
+    display: flex;
+    place-items: center;
+    gap: 21px;
+    span{
+      font-family: Inter;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 33px;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  button{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: rgba(200, 151, 44, 1);
+    background-color: rgba(255, 255, 255, 1);
+    width: 185px;
+    height: 35px;
+    border-radius: 45px;
+    outline: none;
+    border: none;
+  }
+}

@@ -1,0 +1,119 @@
+.container{
+  max-width: 1171.41px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 62px;
+  .header{
+    display: flex;
+    gap: 5%;
+    place-items: center;
+    height: fit-content;
+    div{
+      height: 0;
+      width: 100%;
+      border-top: 0.5px solid rgba(220, 190, 123, 1);
+    }
+    .center{
+      height: 100%;
+      width: max-content;
+      border-top: none;
+      font-family: Inter;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38.73px;
+      text-align: center;
+      color: rgba(200, 151, 44, 1);
+    }
+
+  }
+  .viewMore{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    color: rgba(200, 151, 44, 1);
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .news{
+    display: flex;
+    gap: 3%;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    place-content: center;
+    div{
+      flex: 1;
+      max-width: 370px;
+      min-width: 250px;
+      height: 492px;
+      background-position: center;
+      background-size: auto 100%;
+      &:hover{
+        .tex3 {
+          transition: all 0.5s ease-in;
+          height: 66px;
+          opacity: 1;
+        }
+      }
+      div{
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(8, 32, 48, 0) 30.73%, #082030 100%);
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        justify-content: end;
+        div{
+          flex:0;
+          display: block;
+          background: none;
+          height: max-content;
+          width: 80%;
+          color: rgba(255, 255, 255, 1);
+        }
+        .tex1{
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 28px;
+          text-align: left;
+
+        }
+        .tex2{
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: left;
+        }
+        .tex3{
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22.4px;
+          text-align: left;
+          height: 0;
+          opacity: 0;
+          transition: all 0.5s ease-out;
+          padding-bottom: 52px;
+        }
+      }
+    }
+    .news1{
+      background-image: url("./../../images/news1.jpg");
+    }
+    .news2{
+      background-image: url("./../../images/news2.jpg");
+    }
+    .news3{
+      background-image: url("./../../images/news3.png");
+    }
+  }
+
+}

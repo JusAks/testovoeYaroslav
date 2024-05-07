@@ -1,0 +1,122 @@
+
+.wrapper{
+  height: 335px;
+  width: 60px;
+  background-color: rgba(196, 196, 196, 1);
+  position: relative;
+  
+  .large{
+    position: absolute;
+    width: 263px;
+    height: 100%;
+    background-color: rgba(8, 32, 48, 1);
+    opacity: 0;
+    z-index: -1;
+    &.visible{
+      opacity: 1;
+      z-index: 1;
+      transition: opacity 0.3s ease-out;
+    }
+    .top{
+      height: 45px;
+      display: flex;
+      justify-content: space-between;
+      .number{
+        height: 40px;
+        width: 60px;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+        text-align: center;
+        color: rgba(128, 149, 164, 1);
+        display: flex;
+        flex-direction: column;
+        place-content: end;
+        gap: 5px;
+        .line{
+          width: 42px;
+          height: 0;
+          border-top: 1px solid white;
+        }
+      }
+      .close{
+        width: 45px;
+        height: 45px;
+        background-color: gray;
+        position: relative;
+        img{
+          position: absolute;
+          height: 16.3px;
+          width: 16.3px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+    }
+    .center{
+      padding-top: 16px;
+      width: 80%;
+      margin: 0 auto;
+      .header{
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 33px;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+        padding-bottom: 15px;
+      }
+      .content{
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20.8px;
+        text-align: left;
+        color: rgba(128, 149, 164, 1);
+      }
+    }
+    
+  }
+  .small{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    .number{
+      font-family: Inter;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22.5px;
+      color: rgba(8, 32, 48, 1);
+      height: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      :first-child{
+        flex: 1;
+        place-content: center;
+        text-align: center;
+      }
+      .line{
+        width: 80%;
+        height: 0;
+        border-top: 1px solid white;
+      }
+    }
+    .text{
+      padding-top: 20px;
+      place-content: center;
+      justify-content: space-around;
+      writing-mode:vertical-lr;
+      rotate: 180deg;
+      font-family: Inter;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22.5px;
+      color: rgba(8, 32, 48, 1);
+    }
+
+  }
+}
